@@ -24,7 +24,7 @@ function Header() {
                         <a download href='/Main/Resume-CV.pdf'>Download Resume</a>
                     </div>
                     <div className="bg-gradient-to-bl from-orange-300 via-orange-600 to-orange-600 rounded px-4">
-                        Call
+                        <a href=" tel:12392034777">Call</a>
                     </div>
                 </div>
             </div>
