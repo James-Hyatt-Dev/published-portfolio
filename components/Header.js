@@ -31,15 +31,18 @@ function Header() {
         </div>
 
         {/* navigation */}
-        <div className="w-full fixed bottom-0 bg-black bg-opacity-80 flex justify-between z-50 sm:hidden">
+        <div className="w-full fixed bottom-0 bg-black bg-opacity-90 flex justify-between z-50 sm:hidden">
             {/* phone icon */}
             <div className="bg-orange-600 bottom-2 left-6 rounded-tr-full w-10 h-20 flex items-center justify-center z-40">
-                <PhoneIphoneIcon />
+                <div className="flex items-center justify-center" >
+                    <PhoneIphoneIcon />
+                </div>
             </div>
 
             {/* mobile navigation */}
             <div className='flex flex-col flex-1 relative '>
-                <div className="absolute top-0 h-10 bg-transparent w-full flex items-center justify-around">
+                <div className="absolute top-0 h-10 bg-transparent w-full flex items-center justify-around text-xs">
+                    <Link href='/'>Home</Link>
                     <Link href='/about'>About</Link>
                     <Link href='/resume'>Resume</Link>
                     <Link href='/work'>Work</Link>
@@ -51,7 +54,9 @@ function Header() {
 
             {/* email icon */}
             <div className="bg-orange-600 bottom-2 right-6 rounded-tl-full w-10 h-20 flex items-center justify-center z-40">
-                <EmailIcon />
+                <div className="flex items-center justify-center">
+                    <EmailIcon />
+                </div>
             </div>
            
         </div>
