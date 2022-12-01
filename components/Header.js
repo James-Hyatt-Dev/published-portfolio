@@ -16,8 +16,8 @@ function Header() {
                 <div className="flex justify-around">
                     <Link href='/'>Home</Link>
                     <Link href='/about'>About</Link>
-                    <Link href='/resume'>Resume</Link>
                     <Link href='/work'>Work</Link>
+                    <Link href='/resume'>Resume</Link>
                 </div>
                 <div className="justify-end flex gap-2 pr-20 py-2">
                     <div className="bg-gradient-to-bl from-orange-300 via-orange-600 to-orange-600 rounded px-4">
@@ -40,8 +40,8 @@ function Header() {
             </div>
 
             {/* mobile navigation */}
-            <div className='flex flex-col flex-1 relative '>
-                <div className="absolute top-0 h-10 bg-transparent w-full flex items-center justify-around text-xs">
+            <div className='flex flex-col flex-1 relative'>
+                <div className="absolute h-8 mt-2 bg-transparent w-full flex items-center justify-around text-xs text-orange-600">
                     <Link href='/'>Home</Link>
                     <Link href='/about'>About</Link>
                     <Link href='/resume'>Resume</Link>
