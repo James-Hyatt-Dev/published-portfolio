@@ -1,23 +1,45 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import Logo from '../public/Main/jhdOrange.png'
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 
 function Header() {
   return (
-    <div className="w-full bg-black bg-opacity-80 flex justify-center border">
-        <div className="border">
-            <Image width={100} src={Logo} alt='james hyatt personal j h logo' />
-        </div>
-        {/* navigation */}
-
-        <div className="w-full border flex justify-between fixed bottom-0">
-            {/* call icon */}
-            <div className="bg-orange-600 rounded-tr-full w-20 h-10">
-    
+    <div className="w-full">
+        {/* Logo */}
+        <div className="flex border w-full py-2 fixed top-0 bg-black bg-opacity-90">
+            <div className="flex mx-auto">
+                <Image width={125} src={Logo} alt='james hyatt personal logo containing a single jay and a single h' />
             </div>
         </div>
+
+        {/* navigation */}
+        <div className="w-full fixed bottom-0 bg-black bg-opacity-80 flex justify-between z-50">
+            {/* phone icon */}
+            <div className="bg-orange-600 bottom-2 left-6 rounded-tr-full w-10 h-20 flex items-center justify-center z-40">
+                <PhoneIphoneIcon />
+            </div>
+
+            {/* mobile navigation */}
+            <div className='flex flex-col flex-1 relative'>
+                <div className="absolute top-0 h-10 bg-transparent w-full flex items-center justify-center">
+                        ff
+                    </div>
+                    <div className="absolute bottom-0 h-10 bg-orange-600 w-full flex items-center justify-center">
+                        gg
+                    </div>
+
+
+                </div>
+
+            {/* email icon */}
+            <div className="bg-orange-600 bottom-2 right-6 rounded-tl-full w-10 h-20 flex items-center justify-center z-40">
+                <EmailIcon />
+            </div>
+           
+        </div>
     </div>
-    )
+  )
 }
 
 export default Header
