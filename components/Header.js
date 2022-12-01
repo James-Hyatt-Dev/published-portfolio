@@ -2,10 +2,11 @@ import Image from 'next/image'
 import Logo from '../public/Main/jhdOrange.png'
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
+import Link from 'next/link';
 
 function Header() {
   return (
-    <div className="w-full">
+    <div className="w-full pb-36">
         {/* Logo */}
         <div className="flex border w-full py-2 fixed top-0 bg-black bg-opacity-90">
             <div className="flex mx-auto">
@@ -22,8 +23,10 @@ function Header() {
 
             {/* mobile navigation */}
             <div className='flex flex-col flex-1 relative'>
-                <div className="absolute top-0 h-10 bg-transparent w-full flex items-center justify-center">
-                        ff
+                <div className="absolute top-0 h-10 bg-transparent w-full flex items-center justify-center justify-around">
+                    <Link href='/about'>About</Link>
+                    <Link href='/resume'>Resume</Link>
+                    <Link href='/work'>Work</Link>
                     </div>
                     <div className="absolute bottom-0 h-10 bg-orange-600 w-full flex items-center justify-center">
                         gg
