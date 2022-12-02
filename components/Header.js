@@ -36,7 +36,7 @@ function Header() {
         <div className="w-full fixed bottom-0 bg-black bg-opacity-90 flex justify-between z-50 sm:hidden">
             {/* phone icon */}
             <div className="bg-orange-600 bottom-2 left-6 rounded-tr-full w-10 h-20 flex items-center justify-center z-40">
-                <a href="tel:12392034777"><div className="flex items-center justify-center" ><PhoneIphoneIcon /></div></a>
+                <a href="tel:12392034777"><div className="flex items-center justify-center" ><PhoneIphoneIcon className='text-white'  /></div></a>
             </div>
 
             {/* mobile navigation */}
@@ -54,7 +54,7 @@ function Header() {
 
             {/* email icon */}
             <div className="bg-orange-600 bottom-2 right-6 rounded-tl-full w-10 h-20 flex items-center justify-center z-40">
-                <a href="mailto:james@jameshyatt.me"><div className="flex items-center justify-center"><EmailIcon /></div></a>
+                <a href="mailto:james@jameshyatt.me"><div className="flex items-center justify-center"><EmailIcon className='text-white' /></div></a>
             </div>
            
         </div>
