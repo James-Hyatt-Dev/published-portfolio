@@ -9,8 +9,8 @@ import Skills from '../components/Resume/Skills';
 
 function Resume() {
     return (
-        <div className=' pb-16'>
-        <h1 className='text-center text-6xl font-extrabold opacity-5 sticky top-20 sm:text-7xl md:text-8xl lg:text-9xl'>Resume</h1>
+        <div className='pb-16'>
+        <h1 className='text-center text-6xl font-extrabold opacity-20 sticky top-20 sm:text-7xl md:text-8xl lg:text-9xl'>Resume</h1>
 
             <div className=" flex flex-col gap-8 md:px-10 lg:max-w-6xl lg:mx-auto lg:border p-8 lg:border-gray-700">
                 <Name />

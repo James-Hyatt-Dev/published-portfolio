@@ -6,25 +6,27 @@ import Link from 'next/link';
 
 function Header() {
   return (
-    <div className="w-full pb-36">
+    <div className="w-full pb-36 z-50  justify-center">
         {/* Logo */}
-        <div className="flex w-full py-2 fixed top-0 bg-black bg-opacity-90 items-center sm:justify-around">
-            <div className="flex mx-auto sm:w-1/4">
-                <Image width={125} src={Logo} alt='james hyatt personal logo containing a single jay and a single h' />
-            </div>
-            <div className="hidden sm:inline sm:w-3/4">
-                <div className="flex justify-around">
-                    <Link href='/'>Home</Link>
-                    <Link href='/about'>About</Link>
-                    <Link href='/work'>Work</Link>
-                    <Link href='/resume'>Resume</Link>
+        <div className="flex w-full  py-2 fixed top-0 bg-black bg-opacity-90 items-center z-40">
+            <div className=" w-3/4 flex mx-auto sm:items-center">
+                <div className="flex flex-1 justify-center">
+                    <Image width={125} src={Logo} alt='james hyatt personal logo containing a single jay and a single h' />
                 </div>
-                <div className="justify-end flex gap-2 pr-20 py-2">
-                    <div className="bg-gradient-to-bl from-orange-300 via-orange-600 to-orange-600 rounded px-4">
-                        <a download href='/Main/Resume-CV.pdf'>Download Resume</a>
+                <div className="hidden sm:flex sm:items-center gap-20 sm:gap-4  sm:flex-end sm:flex-col">
+                    <div className="flex justify-center gap-8 sm:gap-8">
+                        <Link href='/'>Home</Link>
+                        <Link href='/about'>About</Link>
+                        <Link href='/work'>Work</Link>
+                        <Link href='/resume'>Resume</Link>
                     </div>
-                    <div className="bg-gradient-to-bl from-orange-300 via-orange-600 to-orange-600 rounded px-4">
-                        <a href=" tel:12392034777">Call</a>
+                    <div className="flex gap-2 pr-20 py-2  sm:pr-0 sm:w-full sm:justify-end">
+                        <div className="bg-gradient-to-bl from-orange-300 via-orange-600 to-orange-600 rounded px-4">
+                            <a download href='/Main/Resume-CV.pdf'>Download Resume</a>
+                        </div>
+                        <div className="bg-gradient-to-bl from-orange-300 via-orange-600 to-orange-600 rounded px-4">
+                            <a href=" tel:12392034777">Call</a>
+                        </div>
                     </div>
                 </div>
             </div>

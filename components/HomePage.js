@@ -4,9 +4,9 @@ import James from '../public/Main/james_photo.png'
 function HomePage() {
   return (
     <div className='pb-20'>
-        <h1 className='text-center text-6xl font-extrabold opacity-5 sticky top-20 sm:text-7xl md:text-8xl lg:text-9xl'>Hi!</h1>
+        <h1 className='text-center text-6xl font-extrabold opacity-20 sticky top-20 sm:text-7xl md:text-8xl lg:text-9xl'>Hi!</h1>
 
-        <div className="flex gap-4 justify-center text-xl sm:text-4xl items-center text-gray-400 sm:pt-20 xl:text-6xl">
+        <div className="flex gap-4 justify-center text-xl sm:text-4xl items-center text-gray-400 sm:pt-20 xl:text-6xl pt-8">
             <h3>Designer.</h3>
             <h3>Programmer.</h3>
             <h3>Person.</h3>
