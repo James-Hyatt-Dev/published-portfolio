@@ -1,6 +1,12 @@
+import Head from "next/head"
+
 function About() {
   return (
     <div className='md:w-3/4 md:flex md:flex-col md:mx-auto xl:w-1/2 pb-20'>
+      <Head>
+        <title>James Hyatt | Front End Developer</title>
+      </Head>
+      
         <h1 className='text-center text-6xl font-extrabold opacity-20 sticky top-20 sm:text-7xl md:text-8xl lg:text-9xl'>About</h1>
         <div className="text-center text-gray-400 flex flex-col gap-4 text-xs py-10 sm:text-xl sm:font-extralight lg:gap-6">
             <p className='tracking-wide leading-relaxed lg:text-2xl lg:text-left'>James is passionate of the user's experience, design, and automations. Highly proficient in CSS, Styled Components and Tailwindcss, James has an acute eye for how the user will experience an application.</p>

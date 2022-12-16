@@ -16,11 +16,15 @@ import NewPet2 from '../public/NewPetCoin/NewPet2.png'
 import NewPetD from '../public/NewPetCoin/NewPetD.png'
 import NewPet5 from '../public/NewPetCoin/NewPet5.png'
 import NewPetH from '../public/NewPetCoin/NewPetH.png'
+import Head from "next/head"
 
 
 function work() {
   return (
     <div className='pb-24 z-40'>
+      <Head>
+        <title>James Hyatt | Front End Developer</title>
+      </Head>
       {/* title */}
       <div className='md:w-3/4 md:flex md:flex-col md:mx-auto xl:w-1/2 sticky top-20 z-30'>
           <h1 className='text-center text-6xl font-extrabold opacity-20 sticky top-20 sm:text-7xl md:text-8xl lg:text-9xl'>Work</h1>
