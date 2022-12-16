@@ -11,6 +11,7 @@ function HomePage() {
             <h3>Programmer.</h3>
             <h3>Person.</h3>
             
+            
         </div>
 
         <div className="flex justify-center">
